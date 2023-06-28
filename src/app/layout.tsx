@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 const libreBaskerville = LibreBaskerville({
   subsets: ['latin'],
-  weight: '700',
+  weight: ['400', '700'],
   variable: '--font-libre-baskerville',
 })
 

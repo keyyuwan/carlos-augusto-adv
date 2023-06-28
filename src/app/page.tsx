@@ -4,6 +4,7 @@ import {
   Hero,
   Rights,
   Services,
+  Stats,
 } from '@/components/HomeSections'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Services />
       <Depositions />
+      <Stats />
     </>
   )
 }

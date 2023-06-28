@@ -50,7 +50,7 @@ export function Depositions() {
         </h2>
       </div>
 
-      <div className="mt-14 grid grid-cols-1 gap-20 md:mt-20 md:grid-cols-3 md:gap-6 md:px-6 lg:px-14">
+      <div className="mt-14 grid grid-cols-1 gap-20 md:mt-20 md:grid-cols-3 md:gap-6 lg:px-14">
         {depositions.map((deposition) => (
           <Deposition
             key={deposition.id}
