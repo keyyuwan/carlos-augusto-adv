@@ -6,7 +6,7 @@ import logoImg from '@/assets/logo.svg'
 
 export function Header() {
   return (
-    <header className="h-20 w-full bg-primary px-5 lg:px-16">
+    <header className="sticky top-0 z-10 h-20 w-full bg-primary px-5 shadow-header lg:px-16">
       {/* Mobile Header */}
       <div className="flex h-full items-center justify-between lg:hidden">
         <img src={logoImg.src} alt="Carlos Augusto Advogados" />

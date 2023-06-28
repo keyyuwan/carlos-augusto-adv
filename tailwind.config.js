@@ -28,6 +28,10 @@ module.exports = {
       borderRadius: {
         sm: '4px',
       },
+
+      boxShadow: {
+        header: '0 0 24px 0 rgba(0, 0, 0, 0.15)',
+      },
     },
   },
   plugins: [],

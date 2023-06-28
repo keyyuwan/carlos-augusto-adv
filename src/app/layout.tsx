@@ -24,7 +24,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${inter.variable} ${libreBaskerville.variable} font-text text-white`}
       >
         <Header />
-        {children}
+
+        <main>{children}</main>
       </body>
     </html>
   )
