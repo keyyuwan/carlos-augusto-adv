@@ -26,6 +26,7 @@ module.exports = {
           100: '#E0E0E0',
           500: '#BDBDBD',
           600: '#828282',
+          650: '#4F4F4F',
           700: '#333333',
         },
 
@@ -39,6 +40,7 @@ module.exports = {
 
       boxShadow: {
         header: '0 0 24px 0 rgba(0, 0, 0, 0.15)',
+        deposition: ' 0px 7px 15px 0px rgba(0, 0, 0, 0.08)',
       },
     },
   },
