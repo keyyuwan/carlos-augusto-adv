@@ -6,10 +6,10 @@ import carlosAugustoImg from '@/assets/carlos-augusto.jpg'
 
 export function About() {
   return (
-    <section className="px-6 py-12 text-center md:grid md:grid-cols-2 md:gap-8 md:pb-24 md:pt-96 md:text-left lg:gap-32 lg:px-32 lg:pt-80">
+    <section className="px-6 py-12 text-center md:grid md:grid-cols-2 md:items-stretch md:gap-8 md:pb-24 md:pt-96 md:text-left lg:gap-32 lg:px-32 lg:pt-80">
       <div className="flex flex-col items-center md:items-start">
         <SectionLabel title="Sobre" />
-        <h2 className="my-6 font-title text-2xl font-bold text-gray-700 md:text-3xl lg:mb-8 lg:mt-3 lg:text-4.5xl lg:leading-11">
+        <h2 className="mb-5 mt-4 font-title text-2xl font-bold text-gray-700 md:text-3xl lg:mb-8 lg:mt-3 lg:text-4.5xl lg:leading-11">
           Carlos Augusto Advogados
         </h2>
         <Divider />
@@ -31,7 +31,7 @@ export function About() {
       <img
         src={carlosAugustoImg.src}
         alt="Carlos Augusto"
-        className="mt-8 lg:mt-0"
+        className="mt-8 md:mt-0"
       />
     </section>
   )
