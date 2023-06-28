@@ -12,6 +12,14 @@ module.exports = {
         text: 'var(--font-inter)',
       },
 
+      fontSize: {
+        '4.5xl': '2.5rem', // 40px
+      },
+
+      lineHeight: {
+        11: '48px',
+      },
+
       colors: {
         gray: {
           50: '#F2F2F2',

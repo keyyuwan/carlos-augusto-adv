@@ -6,7 +6,7 @@ import direitoConsumidorImg from '@/assets/icons/direito-consumidor.svg'
 
 export function Rights() {
   return (
-    <div className="grid grid-cols-1 bg-primary text-center lg:absolute lg:left-[50%] lg:mt-[-155px] lg:w-full lg:max-w-[996px] lg:translate-x-[-50%] lg:grid-cols-3 lg:rounded-sm">
+    <div className="grid grid-cols-1 bg-primary text-center md:absolute md:left-[50%] md:w-full md:max-w-[996px] md:translate-x-[-50%] md:grid-cols-3 lg:mt-[-155px] lg:rounded-sm">
       <RightsItem
         iconUrl={direitoPenalImg.src}
         title="Direito Penal"
