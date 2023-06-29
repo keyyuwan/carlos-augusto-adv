@@ -32,7 +32,7 @@ const stats: StatType[] = [
 
 export function Stats() {
   return (
-    <section className="relative h-[703px] bg-[url(../assets/banners/alguns-numeros.jpg)] bg-cover bg-no-repeat md:h-[468px]">
+    <section className="relative h-[720px] bg-[url(../assets/banners/alguns-numeros.jpg)] bg-cover bg-no-repeat md:h-[468px]">
       <div className="absolute inset-0 bg-primary bg-opacity-75 py-12 lg:py-24">
         {/* Por que nos escolher */}
         <div className="flex flex-col items-center">

@@ -5,6 +5,7 @@ import {
   Rights,
   Services,
   Stats,
+  Team,
 } from '@/components/HomeSections'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Depositions />
       <Stats />
+      <Team />
     </>
   )
 }
