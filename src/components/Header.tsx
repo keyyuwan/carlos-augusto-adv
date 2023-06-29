@@ -2,6 +2,7 @@ import { Menu } from 'lucide-react'
 
 import { ButtonLink } from './ButtonLink'
 import { ActiveLink } from './ActiveLink'
+
 import logoImg from '@/assets/logo.svg'
 
 export function Header() {
@@ -26,7 +27,6 @@ export function Header() {
           <ActiveLink href="/servicos" title="Serviços" />
           <ActiveLink href="/advogados" title="Advogados" />
           <ActiveLink href="/sobre" title="Sobre" />
-          <ActiveLink href="/blog" title="Blog" />
           <ActiveLink href="/contato" title="Contato" />
         </nav>
 
