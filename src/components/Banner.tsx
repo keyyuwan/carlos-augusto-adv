@@ -3,7 +3,7 @@ import { SectionLabel } from './SectionLabel'
 interface BannerProps {
   label: string
   title: string
-  description: string
+  description?: string
 }
 
 export function Banner({ label, title, description }: BannerProps) {
@@ -14,9 +14,11 @@ export function Banner({ label, title, description }: BannerProps) {
         <h1 className="font-title text-4xl font-bold md:text-5xl lg:text-6xl">
           {title}
         </h1>
-        <p className="font-medium leading-relaxed md:max-w-[570px]">
-          {description}
-        </p>
+        {description && (
+          <p className="font-medium leading-relaxed md:max-w-[570px]">
+            {description}
+          </p>
+        )}
       </div>
     </section>
   )

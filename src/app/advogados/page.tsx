@@ -2,6 +2,10 @@ import { Banner } from '@/components/Banner'
 import { LawyerCard } from '@/components/LawyerCard'
 import { lawyers } from '@/utils/lawyers'
 
+export const metadata = {
+  title: 'Advogados | Carlos Augusto Advogados',
+}
+
 export default function Lawyers() {
   return (
     <>

@@ -8,6 +8,10 @@ import familiaImg from '@/assets/services/familia.svg'
 import empresasImg from '@/assets/services/empresas.svg'
 import criminalImg from '@/assets/services/criminal.svg'
 
+export const metadata = {
+  title: 'Serviços | Carlos Augusto Advogados',
+}
+
 interface Service {
   id: string
   title: string

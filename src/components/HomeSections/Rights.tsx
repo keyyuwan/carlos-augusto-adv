@@ -1,4 +1,4 @@
-import { RightsItem } from './RightsItem'
+import { RightsItem } from '@/components/RightsItem'
 
 import direitoPenalImg from '@/assets/icons/direito-penal.svg'
 import direitoCivilImg from '@/assets/icons/direito-civil.svg'

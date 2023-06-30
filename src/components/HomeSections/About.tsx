@@ -31,7 +31,7 @@ export function About() {
       <img
         src={carlosAugustoImg.src}
         alt="Carlos Augusto"
-        className="mt-8 md:mt-0"
+        className="mt-8 w-full object-cover md:mt-0"
       />
     </section>
   )
