@@ -1,11 +1,9 @@
 'use client'
-
-import { FormEvent, useRef, useState } from 'react'
-import { Input } from '../Form/Input'
-import { Loading } from '../Loading'
+import { Loading } from '@/components/Loading'
 import { Check } from 'lucide-react'
+import { FormEvent, useRef, useState } from 'react'
 
-export function FooterContactForm() {
+export function ContactForm() {
   const [isSending, setIsSending] = useState(false)
   const [wasSent, setWasSent] = useState(false)
   const formRef = useRef<HTMLFormElement>(null)
@@ -27,18 +25,30 @@ export function FooterContactForm() {
   return (
     <form
       ref={formRef}
-      className="mt-6 space-y-4 lg:mt-10"
       onSubmit={handleSubmit}
+      className="my-8 space-y-4 rounded-sm border border-gray-50 p-10 shadow-contact lg:p-12"
     >
-      <div className="space-y-4 lg:flex lg:items-center lg:gap-4 lg:space-y-0">
-        <Input placeholder="Nome" required />
-        <Input placeholder="Telefone" type="tel" required />
-      </div>
-      <Input placeholder="E-mail" type="email" required />
+      <input
+        placeholder="Nome"
+        required
+        className="h-[54px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
+      />
+      <input
+        placeholder="Telefone"
+        type="tel"
+        required
+        className="h-[54px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
+      />
+      <input
+        placeholder="E-mail"
+        type="email"
+        required
+        className="h-[54px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
+      />
       <textarea
         placeholder="Mensagem"
         required
-        className="h-[120px] w-full rounded-sm border-none p-5 text-sm text-gray-700 outline-none"
+        className="h-[120px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
       />
       <button
         type="submit"
@@ -48,7 +58,7 @@ export function FooterContactForm() {
         {isSending ? <Loading /> : 'Enviar'}
       </button>
       {wasSent && (
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 text-gray-700">
           <Check />
           <span>O formulário foi enviado.</span>
         </div>

@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import { Banner } from '@/components/Banner'
 import logoImg from '@/assets/logo.svg'
+import { ContactForm } from './components/ContactForm'
 
 export const metadata = {
   title: 'Contato | Carlos Augusto Advogados',
@@ -19,36 +20,7 @@ export default function Contact() {
             Entre em contato
           </h2>
 
-          <form className="my-8 space-y-4 rounded-sm border border-gray-50 p-10 shadow-contact lg:p-12">
-            <input
-              placeholder="Nome"
-              required
-              className="h-[54px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
-            />
-            <input
-              placeholder="Telefone"
-              type="tel"
-              required
-              className="h-[54px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
-            />
-            <input
-              placeholder="E-mail"
-              type="email"
-              required
-              className="h-[54px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
-            />
-            <textarea
-              placeholder="Mensagem"
-              required
-              className="h-[120px] w-full rounded-sm border border-gray-100 p-5 text-sm text-gray-700 outline-none"
-            />
-            <button
-              type="submit"
-              className="flex h-11 w-full items-center justify-center rounded-sm bg-secondary px-5 text-xs font-semibold uppercase leading-7 tracking-widest transition-colors hover:bg-secondary/90"
-            >
-              Enviar
-            </button>
-          </form>
+          <ContactForm />
         </div>
 
         <div>
