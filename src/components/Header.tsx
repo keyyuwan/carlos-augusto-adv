@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import Link from 'next/link'
 
 import { ButtonLink } from './ButtonLink'
 import { ActiveLink } from './ActiveLink'
@@ -13,6 +12,10 @@ export function Header() {
 
   function handleToggle() {
     setIsOpen((prevState) => !prevState)
+  }
+
+  function handleClose() {
+    setIsOpen(false)
   }
 
   return (
@@ -32,11 +35,36 @@ export function Header() {
 
       {isOpen && (
         <div className="flex w-full flex-col items-center gap-12 bg-primary px-5 py-3 lg:hidden">
-          <ActiveLink href="/" title="Home" hasNotDownLine />
-          <ActiveLink href="/servicos" title="Serviços" hasNotDownLine />
-          <ActiveLink href="/advogados" title="Advogados" hasNotDownLine />
-          <ActiveLink href="/sobre" title="Sobre" hasNotDownLine />
-          <ActiveLink href="/contato" title="Contato" hasNotDownLine />
+          <ActiveLink
+            href="/"
+            title="Home"
+            hasNotDownLine
+            onClick={handleClose}
+          />
+          <ActiveLink
+            href="/servicos"
+            title="Serviços"
+            hasNotDownLine
+            onClick={handleClose}
+          />
+          <ActiveLink
+            href="/advogados"
+            title="Advogados"
+            hasNotDownLine
+            onClick={handleClose}
+          />
+          <ActiveLink
+            href="/sobre"
+            title="Sobre"
+            hasNotDownLine
+            onClick={handleClose}
+          />
+          <ActiveLink
+            href="/contato"
+            title="Contato"
+            hasNotDownLine
+            onClick={handleClose}
+          />
         </div>
       )}
 
