@@ -41,6 +41,11 @@ module.exports = {
       boxShadow: {
         header: '0 0 24px 0 rgba(0, 0, 0, 0.15)',
         deposition: ' 0px 7px 15px 0px rgba(0, 0, 0, 0.08)',
+        contact: '0px 4px 6px 0px rgba(0, 0, 0, 0.06)',
+      },
+
+      backgroundImage: {
+        footerGradient: 'linear-gradient(180deg, #FFFFFF 0%, #D8AE75 100%)',
       },
     },
   },

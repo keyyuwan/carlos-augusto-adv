@@ -1,4 +1,5 @@
 import { Banner } from '@/components/Banner'
+import { Footer } from '@/components/Footer'
 import { LawyerCard } from '@/components/LawyerCard'
 import { lawyers } from '@/utils/lawyers'
 
@@ -27,6 +28,8 @@ export default function Lawyers() {
           ))}
         </div>
       </section>
+
+      <Footer />
     </>
   )
 }

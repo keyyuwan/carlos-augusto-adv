@@ -7,6 +7,7 @@ import legislacaoImg from '@/assets/services/legislacao.svg'
 import familiaImg from '@/assets/services/familia.svg'
 import empresasImg from '@/assets/services/empresas.svg'
 import criminalImg from '@/assets/services/criminal.svg'
+import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Serviços | Carlos Augusto Advogados',
@@ -129,6 +130,8 @@ export default function Services() {
           ))}
         </div>
       </section>
+
+      <Footer />
     </>
   )
 }

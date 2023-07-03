@@ -7,6 +7,7 @@ import direitoPenalImg from '@/assets/icons/direito-penal.svg'
 import direitoCivilImg from '@/assets/icons/direito-civil.svg'
 import direitoConsumidorImg from '@/assets/icons/direito-consumidor.svg'
 import { Depositions } from '@/components/Depositions'
+import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Sobre | Carlos Augusto Advogados',
@@ -81,6 +82,8 @@ export default function About() {
       <Stats />
 
       <Depositions />
+
+      <Footer />
     </>
   )
 }
