@@ -14,7 +14,7 @@ export function Services() {
         <Divider />
       </div>
 
-      <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3 lg:mx-auto lg:mt-20 lg:max-w-[840px] lg:gap-16">
+      <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3 lg:mx-auto lg:mt-20 lg:max-w-[840px] lg:items-start lg:gap-16">
         {services.map((service) => (
           <ServicesItem
             key={service.id}

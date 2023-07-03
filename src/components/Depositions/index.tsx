@@ -18,7 +18,7 @@ const depositions: DepositionType[] = [
     id: '1',
     avatarUrl: dep01.src,
     description:
-      'By cooperating with over many lawyers across the word our law firm is leaders in providing quality legal services.',
+      'Recebi um atendimento excepcional, todas as minhas dúvidas foram esclarecidas e recebi um suporte jurídico de alta qualidade.',
     name: 'Camila Oliveira',
     occupation: 'Contadora',
   },
@@ -26,7 +26,7 @@ const depositions: DepositionType[] = [
     id: '2',
     avatarUrl: dep03.src,
     description:
-      'By cooperating with over many lawyers across the word our law firm is leaders in providing quality legal services.',
+      'Recomendo fortemente a Carlos Augusto Advogados devido à sua competência, profissionalismo, eficiência e cuidado com os clientes.',
     name: 'Jonatas Ramos',
     occupation: 'Engenheiro Civil',
   },
@@ -34,7 +34,7 @@ const depositions: DepositionType[] = [
     id: '3',
     avatarUrl: dep02.src,
     description:
-      'By cooperating with over many lawyers across the word our law firm is leaders in providing quality legal services.',
+      'Todos os envolvidos demonstraram alta eficiência, cordialidade e profissionalismo. Estou extremamente satisfeito com o serviço prestado.',
     name: 'Gabriela Guimarães',
     occupation: 'Empresária',
   },

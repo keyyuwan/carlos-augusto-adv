@@ -16,8 +16,8 @@ export function Footer() {
           </h2>
           <Divider />
           <p className="mt-5 text-center text-sm leading-relaxed md:text-base lg:mt-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Faça uma consulta gratuita agora mesmo e veremos como podemos te
+            ajudar!
           </p>
         </div>
 

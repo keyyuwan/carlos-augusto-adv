@@ -18,12 +18,12 @@ export function About() {
           sempre como pilar a prática da justiça com ética.
         </p>
         <p className="my-6 text-sm leading-7 text-gray-600 lg:text-base">
-          Maecenas auctor blandit consectetur. Etiam et tellus vulputate,
-          interdum velit eget, gravida metus. Donec porttitor dolor et arcu
-          semper, eget pulvinar mauris volutpat. Proin condimentum mi justo,
-          dictum placerat quam vulputate at. Integer pulvinar odio nec sem
-          eleifend, tincidunt tincidunt erat mollis. Pellentesque cursus ligula
-          libero, sed porta ipsum.
+          A equipe do escritório CARLOS AUGUSTO ADVOGADOS é formada por
+          profissionais graduados em renomadas instituições de ensino
+          brasileiras, com especializações em diversas áreas do direito. Esses
+          profissionais têm uma ampla experiência na advocacia empresarial,
+          incluindo passagens pelo departamento jurídico de empresas nacionais e
+          multinacionais estabelecidas no país.
         </p>
         <ButtonLink title="Saiba mais" href="/sobre" />
       </div>

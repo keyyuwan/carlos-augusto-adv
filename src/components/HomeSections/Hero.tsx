@@ -9,8 +9,9 @@ export function Hero() {
             Nós somos especialistas em serviços legais
           </h1>
           <p className="mb-8 mt-5 font-medium leading-relaxed lg:mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Atuando na advocacia de forma atualizada, em um ambiente
+            descontraído e de colaboração, com ênfase na constante atualização
+            técnica e ética.
           </p>
           <ButtonLink href="/contato" title="Entrar em contato" />
         </div>

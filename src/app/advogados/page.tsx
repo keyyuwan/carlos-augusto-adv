@@ -13,7 +13,9 @@ export default function Lawyers() {
       <Banner
         label="Equipe"
         title="Conheça nossos advogados"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Nossa equipe é formada por
+        profissionais graduados em renomadas instituições de ensino
+        brasileiras, com especializações em diversas áreas do direito."
       />
 
       <section className="px-6 py-12 lg:py-24">

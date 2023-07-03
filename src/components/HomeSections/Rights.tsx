@@ -10,17 +10,17 @@ export function Rights() {
       <RightsItem
         iconUrl={direitoPenalImg.src}
         title="Direito Penal"
-        description="Lorem ipsum dolor sit amet, consectetur"
+        description="Defesa de pessoas físicas ou jurídicas"
       />
       <RightsItem
         iconUrl={direitoCivilImg.src}
         title="Direito Civil"
-        description="Lorem ipsum dolor sit amet, consectetur"
+        description="Ações referentes a propriedade e posse de bens"
       />
       <RightsItem
         iconUrl={direitoConsumidorImg.src}
         title="Direito do Consumidor"
-        description="Lorem ipsum dolor sit amet, consectetur"
+        description="Defesa dos interesses de clientes"
       />
     </div>
   )
