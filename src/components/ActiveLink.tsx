@@ -5,12 +5,29 @@ import { usePathname } from 'next/navigation'
 
 interface ActiveLinkProps extends LinkProps {
   title: string
+  hasNotDownLine?: boolean
 }
 
-export function ActiveLink({ title, ...rest }: ActiveLinkProps) {
+export function ActiveLink({
+  title,
+  hasNotDownLine = false,
+  ...rest
+}: ActiveLinkProps) {
   const pathname = usePathname()
 
   const isActive = pathname === rest.href
+
+  if (hasNotDownLine) {
+    return (
+      <Link
+        data-active={isActive}
+        className="text-xs font-semibold uppercase tracking-widest data-[active=true]:text-secondary"
+        {...rest}
+      >
+        {title}
+      </Link>
+    )
+  }
 
   return (
     <Link

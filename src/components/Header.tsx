@@ -1,25 +1,47 @@
-import { Menu } from 'lucide-react'
+'use client'
+
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 
 import { ButtonLink } from './ButtonLink'
 import { ActiveLink } from './ActiveLink'
-
 import logoImg from '@/assets/logo.svg'
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  function handleToggle() {
+    setIsOpen((prevState) => !prevState)
+  }
+
   return (
-    <header className="sticky top-0 z-10 h-20 w-full bg-primary px-5 shadow-header lg:px-16">
+    <header className="sticky top-0 z-10 h-20 w-full bg-primary  shadow-header">
       {/* Mobile Header */}
-      <div className="flex h-full items-center justify-between lg:hidden">
+      <div className="flex h-full items-center justify-between px-5 lg:hidden">
         <img src={logoImg.src} alt="Carlos Augusto Advogados" />
 
-        {/* Hamburguer */}
-        <button>
-          <Menu className="text-secondary" />
+        <button onClick={handleToggle}>
+          {isOpen ? (
+            <X className="text-secondary" />
+          ) : (
+            <Menu className="text-secondary" />
+          )}
         </button>
       </div>
 
+      {isOpen && (
+        <div className="flex w-full flex-col items-center gap-12 bg-primary px-5 py-3 lg:hidden">
+          <ActiveLink href="/" title="Home" hasNotDownLine />
+          <ActiveLink href="/servicos" title="Serviços" hasNotDownLine />
+          <ActiveLink href="/advogados" title="Advogados" hasNotDownLine />
+          <ActiveLink href="/sobre" title="Sobre" hasNotDownLine />
+          <ActiveLink href="/contato" title="Contato" hasNotDownLine />
+        </div>
+      )}
+
       {/* Desktop Header */}
-      <div className="hidden lg:flex lg:h-full lg:items-center lg:justify-between">
+      <div className="hidden lg:flex lg:h-full lg:items-center lg:justify-between lg:px-16">
         <img src={logoImg.src} alt="Carlos Augusto Advogados" />
 
         <nav className="flex h-full items-center">
